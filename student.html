@@ -1,0 +1,123 @@
+<html style="background-color: cadetblue;">
+<head>
+<title>Form</title>
+
+<!-- css file -->
+<style>
+ * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding-left: 16px;
+
+   
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] ,input[type=tel] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+lable,input {
+margin :10px;
+padding-left:20px;
+}
+.inputs{
+margin-left:200px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  
+}
+
+hvr-grow:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  }
+
+.btn{
+background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-left:300px; 
+   }
+  
+
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+</style>
+
+</head>
+
+<!-- body content -->
+
+<body>
+
+<form action="https://surya.selfmade.one">
+<div class="container">
+
+<!-- heading -->
+
+<h1 align="center"> STUDENT APPLICATION FORM </h1> <br><br>
+   
+    <hr>
+   <div class="inputs">
+  
+   <lable for="Name" style="padding-left:100px";> <b>Name<b> </lable> 
+   <input type="text" placeholder="Enter Your Name" required> 
+   <br><br>
+   
+   <lable for="Email" style="padding-left:100px";> <b>Email<b> </lable>
+   <input type="text" placeholder="Enter your email" required>
+   <br><br>
+   <lable for="Address" style="padding-left:80px";> <b>Address<b> </lable>
+   <input type="text" placeholder="Enter your Address" required>
+   
+   <br><br>
+   <lable for="phone number"> <b>Phone number<b> </lable>
+   <input type="tel" placeholder="Enter your phone number" class=" hvr-grow:hover"  required>
+   <br><br>
+   
+    <lable for="Gender" style="padding-left:80px";> <b>Gender<b> </lable>
+   <input type="radio" name="gender" value="Male" required> Male 
+   <input type="radio" name="gender" value="Female" required> Female
+   <br><br>
+   
+   <lable for="Course" style="padding-left:100px";> <b>Course<b> </lable>
+    <select name="course"> 
+    <option value="BCA">BCA </option>
+    <option value="BA(TAMIL)">BA.Tamil </option>
+      
+    
+    </select>
+   
+   </div>
+<hr>
+
+<!--button -->
+
+   <button align="center" type="submit" class="btn"> Submit </button>
+    <button align="center" type="reset" class= "btn">Clear </button>
+   
+</div>
+</form>
+  
+  
+
+</body>
+
+</html>
+
